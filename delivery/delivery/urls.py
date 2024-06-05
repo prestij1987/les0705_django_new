@@ -16,7 +16,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.urls import include
+from django.views.debug import default_urlconf
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('django', default_urlconf),             
+    path('lotery/', include('lotery.urls')),
 ]
+
+
+
