@@ -23,6 +23,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('django', default_urlconf),             
     path('lotery/', include('lotery.urls')),
+    #path('mainpage/', include('mainpage.urls') ),
+    path('tasklist/', include('tasklist.urls'))
+
 ]
 
 

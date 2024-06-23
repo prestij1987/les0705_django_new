@@ -1,10 +1,19 @@
 from django.shortcuts import render
 
+
 # Create your views here.
 
-from django.http import HttpResponse
+#from django.http import HttpResponse
 
 def index(request):
-    return HttpResponse(
-        '<h1>Я буду приложением<br/> для окошек</h1>'
-    )
+    context = {
+        'summa': 12345
+    }
+    return render (request, 'lotery/index.html', context)
+
+def menu(request):
+    context = {
+        
+    }
+    return request (request, 'mainpage/index.html', context)
+ 

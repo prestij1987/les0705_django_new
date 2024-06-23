@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'lotery',
+    'lotery','tasklist',
 ]
 
 MIDDLEWARE = [
@@ -77,11 +77,13 @@ WSGI_APPLICATION = 'delivery.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgres',
-        'NAME': BASE_DIR / 'postgres',
-    }
+DATABASES = { 
+    "default": { 
+        "ENGINE": "django.db.backends.postgresql", 
+        "OPTIONS": { 
+            "service": "my_service" 
+        } 
+    } 
 }
 
 
