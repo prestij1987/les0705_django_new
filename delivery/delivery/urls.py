@@ -20,6 +20,7 @@ from django.urls import include
 from django.views.debug import default_urlconf
 
 urlpatterns = [
+    path('', include('tasklist.urls')),
     path('admin/', admin.site.urls),
     path('django', default_urlconf),             
     path('lotery/', include('lotery.urls')),

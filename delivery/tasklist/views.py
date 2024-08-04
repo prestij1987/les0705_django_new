@@ -9,7 +9,12 @@ def func_new(request):
               
     return render(request, 'tasklist/first.html', slovar
 
+
     )
+
+
+def func_css(request):
+    return render(request)
            
 
 
